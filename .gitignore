@@ -1,0 +1,29 @@
+# Neovim Portable - Git Ignore
+# This ignore file is optimized for a clean repository that contains configuration
+# but excludes large third-party binaries that should be distributed via Releases.
+
+# Ignore all binary tools and Neovim binaries
+nvim-bin/
+tools/
+fonts/
+
+# Ignore local data, state, and cache
+nvim-data/
+nvim-state/
+nvim-cache/
+
+# Keep the configuration and setup scripts
+!nvim/
+!*.bat
+!*.lua
+!*.md
+!*.gitignore
+
+# Ignore any zip/7z archives we create
+*.zip
+*.7z
+*.rar
+
+# Ignore OS files
+Thumb.db
+.DS_Store
